@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const {engine} = require('express-handlebars');
 var cors = require('cors')
 const app = express();
-const port = 3000; // Choose any available port number
+const port = process.env.PORT || 4000; // Choose any available port number
 const fs = require('fs');
 
 // Set Handlebars as the view engine
